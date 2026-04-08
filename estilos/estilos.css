@@ -1,0 +1,21 @@
+body {
+    margin: 10px;
+    font-family:'Segoe UI', sans-serif;
+    margin-top: 70px;
+}
+img {
+    border-radius: 50px;
+}
+div.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #346134;
+    padding: 15px;
+    text-align: center;
+}
+div.menu a{
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+}
