@@ -2,172 +2,381 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8"> <!--caracteres especiales-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--compatible con culaquier dispotv.-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jezahel — Soluciones Digitales</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
 
-    <title>Jezahel</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!--links para tipo de letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+  <!--Tipo de letra de Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!--iconos-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <div class="contenedor">
-        <img src="imagen/fotopanel.jpeg" alt="fotopanel">
-        <div class="texto">
-            <h1>JEZAHEL</h1>
-            <h2>Soluciones digitales para problemas reales</h2>
-        </div>
-    </div>
-
-    <ul class="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Modalidad</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-
-    <section id="inicio">
-        <h2>¡Bienvenido!</h2>
-        <div>
-            <p>
-                Dweb JR es una empresa de software que ha ayudado a empresas a acelerar
-                el crecimiento del desarrollo de sus productos con experiencia en
-                desarrollo web y móvil. Permítanos usar nuestra experiencia para ayudarlo
-                a desbloquear el potencial de su empresa
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <h2>¿Quiénes Somos?</h2>
-        <div>
-            <p>
-                Somos un emprendimiento de servicios enfocado en el desarrollo de software.
-                Contamos con conocimientos en programación, desarrollo web
-                y soluciones digitales
-            </p>
-        </div>
-    </section>
-
-    <div id="servicios">
-        <h2>¿Qué Ofrecemos?</h2>
-        <ul style="list-style-type:square">
-            <li>Aplicacion web</li>
-            <li>App movil</li>
-            <li>Creación de sitios web</li>
-            <li>Plataformas Educativas</li>
+    <!--menu-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jezahel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMain">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#modalidad">Modalidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
+      </div>
     </div>
+  </nav>
 
-    <div id="trabajo">
-        <h2>Cómo trabajamos</h2>
-        <ol type="a">
-            <li>Descubrimos</li>
-            <p>
-                Conocemos tu negocio, usuarios y objetivos. Sin compromiso.
-            </p>
-            <li>Planificación y diseño</li>
-            <p>
-                Alcance, arquitectura, prototipos y presupuesto. Todo esta acordado
-                antes de escribir ni una sola línea de código
-            </p>
-            <li>Desarrollo</li>
-            <p>
-                Sprints de dos semanas con demostraciones. Se ve un progreso real
-                en cada iteración
-            </p>
-            <li>Lanzamiento y soporte</li>
-            <p>
-                Pruebas exhaustivas, formación del equipo y soporte continuo
-                tras el lanzamiento.
-            </p>
-            </li>
-        </ol>
+  <!--inicio-->
+  <div class="hero">
+    <img src="imagen/fotopanel.jpeg" alt="Jezahel hero">
+    <div class="hero-overlay">
+      <h1>Jezahel</h1>
+      <div class="hero-line"></div>
+      <p>Soluciones digitales para problemas reales</p>
     </div>
+  </div>
 
-    <div>
-        <h2>Tabla de Servicios</h2>
-        <table border="1px">
-            <tr>
-                <th>Servicio</th>
-                <th>Descripción</th>
-                <th>Precio Referencial</th>
-            </tr>
+  <!--carrusel-->
+  <div class="carousel-section">
+    <div id="carouselJezahel" class="carousel slide" data-bs-ride="carousel">
 
-            <tr>
-                <td>Landing Page</td>
-                <td>Página web de una sola sección para promocionar un servicio o negocio</td>
-                <td>$300 - $800</td>
-            </tr>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselJezahel" data-bs-slide-to="0"
+          class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselJezahel" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselJezahel" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
 
-            <tr>
-                <td>Sitio Web Corporativo</td>
-                <td>Página web profesional para empresas con varias secciones</td>
-                <td>$800 - $2,500</td>
-            </tr>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- Reemplaza con: <img src="img/img1.jpg" class="d-block w-100" alt="..."> -->
+          <div class="slide-placeholder slide-1">
+            <h3>Desarrollo Web</h3>
+            <p>Sitios que inspiran confianza</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Reemplaza con: <img src="img/img2.jpg" class="d-block w-100" alt="..."> -->
+          <div class="slide-placeholder slide-2">
+            <h3>Aplicaciones Móviles</h3>
+            <p>Experiencias en la palma de tu mano</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Reemplaza con: <img src="img/img3.jpg" class="d-block w-100" alt="..."> -->
+          <div class="slide-placeholder slide-3">
+            <h3>Plataformas Educativas</h3>
+            <p>Conocimiento sin fronteras</p>
+          </div>
+        </div>
+      </div>
 
-            <tr>
-                <td>Aplicación Web</td>
-                <td>Sistema web con base de datos y usuarios</td>
-                <td>Desde $2,000</td>
-            </tr>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselJezahel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselJezahel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
 
-            <tr>
-                <td>Aplicación Móvil</td>
-                <td>Aplicación para Android o iOS</td>
-                <td>$5,000 - $20,000</td>
-            </tr>
+  <!--Bienvenida-->
+  <section id="inicio" class="section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+          <h2 class="section-title">Bienvenida</h2>
+          <div class="ornament"><span>✦</span></div>
+          <p>
+            Jezahel es una empresa de software que ha ayudado a negocios a acelerar
+            el crecimiento de sus productos digitales, con experiencia en desarrollo
+            web y móvil. Permítanos usar nuestra experiencia para desbloquear
+            el potencial de tu empresa.
+          </p>
+        </div>
+      </div>
 
-            <tr>
-                <td>Plataforma Educativa</td>
-                <td>Sistema educativo con usuarios, cursos y contenido</td>
-                <td>Desde $3,000</td>
-            </tr>
+      <div class="row mt-5 gy-4">
+        <div class="col-md-6">
+          <div style="border-left: 2px solid var(--gold); padding-left: 2rem;">
+            <h3 style="font-size:1.5rem; text-transform:uppercase; letter-spacing:.08em;">¿Quiénes Somos?</h3>
+            <p style="color:var(--muted);">
+              Somos un emprendimiento de servicios enfocado en el desarrollo de software.
+              Contamos con conocimientos en programación, desarrollo web y soluciones
+              digitales a medida.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div style="border-left: 2px solid var(--gold); padding-left: 2rem;">
+            <h3 style="font-size:1.5rem; text-transform:uppercase; letter-spacing:.08em;">Nuestra Misión</h3>
+            <p style="color:var(--muted);">
+              Crear soluciones elegantes y funcionales que transforman ideas en
+              experiencias digitales memorables, con atención al detalle y un
+              compromiso real con cada cliente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!--servicios-->
+  <section id="servicios" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">¿Qué Ofrecemos?</h2>
+      <p class="section-subtitle">Nuestras especialidades digitales</p>
+
+      <div class="row gy-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <ion-icon name="globe-outline" class="icon"></ion-icon>
+            <h4>Aplicación Web</h4>
+            <p>Sistemas web robustos con base de datos y gestión de usuarios.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <ion-icon name="phone-portrait-outline" class="icon"></ion-icon>
+            <h4>App Móvil</h4>
+            <p>Aplicaciones nativas y multiplataforma para Android e iOS.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <ion-icon name="desktop-outline" class="icon"></ion-icon>
+            <h4>Sitios Web</h4>
+            <p>Creación de sitios corporativos y landing pages de alto impacto.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <ion-icon name="book-outline" class="icon"></ion-icon>
+            <h4>Plataformas Educativas</h4>
+            <p>Sistemas con cursos, usuarios y contenido multimedia integrado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--modalidad-->
+  <section id="modalidad" class="section-dark">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <h2 class="section-title" style="color:var(--gold-lt);">Cómo Trabajamos</h2>
+          <div class="ornament"><span style="color:#D4BC8A;">✦</span></div>
+
+          <div class="proceso-item">
+            <div class="proceso-num">I</div>
+            <div>
+              <h4 style="color:var(--ivory);">Descubrimiento</h4>
+              <p>Conocemos tu negocio, tus usuarios y tus objetivos. Sin compromiso.</p>
+            </div>
+          </div>
+
+          <div class="proceso-item">
+            <div class="proceso-num">II</div>
+            <div>
+              <h4 style="color:var(--ivory);">Planificación & Diseño</h4>
+              <p>Alcance, arquitectura, prototipos y presupuesto — todo acordado antes de escribir una sola línea de código.</p>
+            </div>
+          </div>
+
+          <div class="proceso-item">
+            <div class="proceso-num">III</div>
+            <div>
+              <h4 style="color:var(--ivory);">Desarrollo</h4>
+              <p>Sprints de dos semanas con demostraciones reales. Progreso visible en cada iteración.</p>
+            </div>
+          </div>
+
+          <div class="proceso-item">
+            <div class="proceso-num">IV</div>
+            <div>
+              <h4 style="color:var(--ivory);">Lanzamiento & Soporte</h4>
+              <p>Pruebas exhaustivas, formación del equipo y soporte continuo tras el lanzamiento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--tabla de servicios-->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Tabla de Servicios</h2>
+      <p class="section-subtitle">Precios referenciales — cada proyecto es único</p>
+
+      <div class="table-responsive">
+        <table class="tabla-servicios">
+          <thead>
             <tr>
-                <td colspan="2">Costo Promedio de Proyecto</td>
-                <td>$1,500+</td>
+              <th>Servicio</th>
+              <th>Descripción</th>
+              <th>Precio Referencial</th>
             </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Landing Page</td>
+              <td>Página web de una sola sección para promocionar un servicio o negocio</td>
+              <td class="precio">$300 – $800</td>
+            </tr>
+            <tr>
+              <td>Sitio Web Corporativo</td>
+              <td>Página web profesional para empresas con varias secciones</td>
+              <td class="precio">$800 – $2,500</td>
+            </tr>
+            <tr>
+              <td>Aplicación Web</td>
+              <td>Sistema web con base de datos y usuarios</td>
+              <td class="precio">Desde $2,000</td>
+            </tr>
+            <tr>
+              <td>Aplicación Móvil</td>
+              <td>Aplicación para Android o iOS</td>
+              <td class="precio">$5,000 – $20,000</td>
+            </tr>
+            <tr>
+              <td>Plataforma Educativa</td>
+              <td>Sistema educativo con usuarios, cursos y contenido</td>
+              <td class="precio">Desde $3,000</td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="2">Costo Promedio de Proyecto</td>
+              <td class="precio">$1,500+</td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </div>
+  </section>
 
-    <div>
-        <h2>Redes Sociales</h2>
-        <a href="https://instagram.com/jezahels_" target="_blank">Instagram</a><br>
-        <a href="https://tiktok.com/@jezahelsalome" target="_blank">TikTok</a>
+<!--redes sociales-->
+  <section class="section-dark">
+    <div class="container text-center">
+      <h2 class="section-title" style="color:var(--gold-lt);">Síguenos</h2>
+      <div class="ornament"><span style="color:#D4BC8A;">✦</span></div>
+      <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+        <a href="https://instagram.com/jezahels_" target="_blank" class="red-social">
+          <ion-icon name="logo-instagram" style="font-size:1.1rem;"></ion-icon>
+          Instagram
+        </a>
+        <a href="https://tiktok.com/@jezahelsalome" target="_blank" class="red-social">
+          <ion-icon name="logo-tiktok" style="font-size:1.1rem;"></ion-icon>
+          TikTok
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div id="contacto">
-        <h2>Contáctanos ahora!</h2>
-        <form action="">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">Correo:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-    </div>
+  <!--contactanos-->
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="section-title">Contáctanos</h2>
+          <p class="section-subtitle">Cuéntanos tu proyecto, con gusto te asesoramos</p>
 
-    <div>
-        <h3>Conoce el Personal</h3>
-        <a href="vistas/contacto.html" target="_blank">Hechar un vistazo...</a>
+          <div class="mb-3">
+            <label class="form-label">Tu nombre</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <ion-icon name="person-outline" style="font-size:1rem; color:var(--gold-lt);"></ion-icon>
+              </span>
+              <input type="text" class="form-control" placeholder="Nombre completo" name="nombre" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="tucorreo" name="email" required>
+              <span class="input-group-text">@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Tu sitio o negocio</label>
+            <div class="input-group">
+              <span class="input-group-text">https://</span>
+              <input type="text" class="form-control" placeholder="tunegocio.com">
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label">Presupuesto estimado</label>
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" placeholder="0" aria-label="Presupuesto">
+              <span class="input-group-text">.00 USD</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Cuéntanos tu proyecto</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <ion-icon name="chatbubble-outline" style="font-size:1rem; color:var(--gold-lt);"></ion-icon>
+              </span>
+              <textarea class="form-control" rows="4"
+                placeholder="Describe brevemente qué necesitas..."></textarea>
+            </div>
+          </div>
+
+          <!--boton de accion-->
+          <div class="text-center mt-4">
+            <button type="submit" class="btn-gold">Enviar Mensaje</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  
+  <section class="section-alt text-center">
+    <div class="container">
+      <h2 class="section-title">Conoce el Equipo</h2>
+      <div class="ornament"><span>✦</span></div>
+      <p style="color:var(--muted); font-style:italic; margin-bottom:2rem;">
+        Personas reales detrás de soluciones reales
+      </p>
+      <a href="vistas/contacto.html" target="_blank" class="btn-gold" style="text-decoration: none";>Ver Equipo</a>
+    </div>
+  </section>
+
+  <footer>
+    <p style="margin:0; font-family:'Cormorant Garant', serif; font-size:1.1rem; letter-spacing:.15em;">
+      JEZAHEL <span>✦</span> Soluciones Digitales
+    </p>
+  </footer>
+
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
 </html>
